@@ -1,41 +1,120 @@
-import React from "react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formData);
+  };
+
   return (
-    <section id="contact" className="bg-blue-50 py-20">
-      <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl font-bold text-green-600 mb-6">Contact Us</h2>
-        <form className="max-w-lg mx-auto bg-white p-6 rounded shadow-lg">
-          <div className="mb-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full p-3 border border-gray-300 rounded"
-            />
+    <div className="bg-gray-100 py-36" id="contact">
+      <div className="container px-4 mx-auto">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-12 text-center">
+          Get in Touch
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-700 font-semibold mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 font-semibold mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  htmlFor="message"
+                  className="block text-gray-700 font-semibold mb-2"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div className="text-center">
+                <button
+                  type="submit"
+                  className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-3 border border-gray-300 rounded"
-            />
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Contact Information
+              </h3>
+              <p className="text-gray-700">
+                <strong>Email:</strong> support@smartirrigation.com
+              </p>
+              <p className="text-gray-700">
+                <strong>Phone:</strong> +233 24 399 9631
+              </p>
+              <p className="text-gray-700 mb-8">
+                <strong>Address:</strong> 18 Mboumou st, Accra, Ghana
+              </p>
+              <div className="text-center mt-8">
+                <a
+                  href="#"
+                  className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                >
+                  Contact Support
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="mb-4">
-            <textarea
-              placeholder="Your Message"
-              rows="4"
-              className="w-full p-3 border border-gray-300 rounded"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-green-600 text-white p-3 rounded hover:bg-green-700"
-          >
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

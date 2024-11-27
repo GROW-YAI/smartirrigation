@@ -1,27 +1,29 @@
 import React from "react";
-import Hero from "../assets/hero-image.png";
+import Hero from "../assets/farmer.jpg";
+import Farmer from "../assets/founder-img.png.webp";
+import Farmer2 from "../assets/user.png.webp";
 
 const Home = () => {
   return (
-    <section className="bg-gray-50 min-h-screen flex flex-col items-center">
+    <section className="bg-gray-50 min-h-screen flex flex-col items-center pt-16">
       {/* Hero Section */}
       <div className="w-full bg-gradient-to-br from-green-600 to-blue-600 text-white py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <h1 className="text-5xl font-bold leading-snug">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-snug">
               Smarter Irrigation <br /> for a Healthier Farm
             </h1>
-            <p className="text-lg text-gray-100">
+            <p className="text-lg sm:text-xl text-gray-100">
               Manage farm health and water usage with our automated irrigation
               system. Real-time insights and GSM-powered control make farming
               efficient and sustainable.
             </p>
-            <div className="flex space-x-4">
-              <button className="bg-white text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <button className="bg-white text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition w-full sm:w-auto hidden md:block">
                 Get Started
               </button>
-              <button className="bg-green-700 px-6 py-3 rounded-md font-semibold hover:bg-green-800 transition">
+              <button className="bg-green-700 px-6 py-3 rounded-md font-semibold hover:bg-green-800 transition w-full sm:w-auto hidden md:block">
                 Learn More
               </button>
             </div>
@@ -32,14 +34,23 @@ const Home = () => {
             <img
               src={Hero}
               alt="Smart Irrigation System"
-              className="rounded-lg shadow-xl w-full"
+              className="rounded-lg shadow-xl w-full h-full"
             />
-            <div className="absolute bottom-6 right-6 bg-white p-4 rounded-md shadow-md">
+            <div className="absolute bottom-6 right-6 bg-white p-4 rounded-md shadow-md max-w-xs">
               <h3 className="text-sm font-semibold text-gray-800">
                 Live Metrics:
               </h3>
               <p className="text-xs text-gray-600">Soil Moisture: 75%</p>
-              <p className="text-xs text-gray-600">Temperature: 24°C</p>
+
+              {/* Single Thermostat Icon for Both Temperatures */}
+              <div className="flex items-center text-xs text-gray-600 mt-3">
+                <span className="material-icons text-blue-600 text-base mr-2">
+                  thermostat
+                </span>
+                <span>
+                  <strong>Max:</strong> 34°C | <strong>Min:</strong> 20°C
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -47,10 +58,10 @@ const Home = () => {
 
       {/* Features Section */}
       <div className="py-16 px-6 md:px-12 lg:px-24">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
+        <h2 className="text-4xl font-bold text-center text-gray-800">
           Why Choose Us
         </h2>
-        <p className="text-center text-gray-600 mt-4">
+        <p className="text-lg text-center text-gray-600 mt-4">
           Our system is designed to make farming easier, smarter, and more
           sustainable.
         </p>
@@ -64,7 +75,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold text-gray-800">
               Automated Watering
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-lg text-gray-600 mt-2">
               Never worry about overwatering or underwatering again. Let the
               system handle it for you.
             </p>
@@ -78,7 +89,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold text-gray-800">
               Real-Time Data
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-lg text-gray-600 mt-2">
               Access soil health, moisture levels, and environmental conditions
               directly on your device.
             </p>
@@ -92,7 +103,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold text-gray-800">
               Sustainable Farming
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-lg text-gray-600 mt-2">
               Contribute to a greener planet with an eco-friendly, water-saving
               irrigation system.
             </p>
@@ -102,7 +113,7 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <div className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
+        <h2 className="text-4xl font-bold text-center text-gray-800">
           What Farmers Are Saying
         </h2>
         <div className="mt-10 grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
@@ -114,7 +125,7 @@ const Home = () => {
             </p>
             <div className="mt-4 flex items-center space-x-4">
               <img
-                src="/farmer1.jpg"
+                src={Farmer}
                 alt="Farmer John"
                 className="w-12 h-12 rounded-full object-cover"
               />
@@ -133,7 +144,7 @@ const Home = () => {
             </p>
             <div className="mt-4 flex items-center space-x-4">
               <img
-                src="/farmer2.jpg"
+                src={Farmer2}
                 alt="Farmer Jane"
                 className="w-12 h-12 rounded-full object-cover"
               />
