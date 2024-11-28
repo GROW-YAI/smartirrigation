@@ -30,7 +30,7 @@ const About = () => {
           {/* <div className="w-16 h-16 flex items-center justify-center bg-green-100 text-green-600 rounded-full mb-6"> */}
           {/* <span className="material-icons text-3xl">agriculture</span> */}
           {/* </div> */}
-          <h2 className="text-4xl font-bold text-green-600">
+          <h2 className="text-4xl font-bold text-teal-500">
             About Our Mission
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mt-4">
@@ -43,7 +43,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-10 mt-12">
           {/* Feature 1 */}
           <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105">
-            <div className="w-16 h-16 mx-auto bg-green-100 text-green-600 flex items-center justify-center rounded-full mb-6">
+            <div className="w-16 h-16 mx-auto bg-green-100 text-teal-500 flex items-center justify-center rounded-full mb-6">
               <span className="material-icons text-3xl">water_drop</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-800">
@@ -84,30 +84,30 @@ const About = () => {
 
         {/* Statistics Section */}
         <div className="bg-green-50 py-12 mt-16 rounded-lg shadow-inner">
-          <h3 className="text-2xl font-bold text-green-600">
+          <h3 className="text-2xl font-bold text-teal-500">
             Impact at a Glance
           </h3>
           <div className="mt-8 grid md:grid-cols-4 gap-6 text-center">
             <div>
-              <h4 className="text-4xl font-bold text-green-700">
+              <h4 className="text-4xl font-bold text-teal-500">
                 <Counter target={85} duration={2000} />%
               </h4>
               <p className="text-gray-600 mt-2">Water Savings</p>
             </div>
             <div>
-              <h4 className="text-4xl font-bold text-green-700">
+              <h4 className="text-4xl font-bold text-teal-500">
                 <Counter target={12000} duration={2500} />+
               </h4>
               <p className="text-gray-600 mt-2">Farmers Helped</p>
             </div>
             <div>
-              <h4 className="text-4xl font-bold text-green-700">
+              <h4 className="text-4xl font-bold text-teal-500">
                 <Counter target={50} duration={2000} />%
               </h4>
               <p className="text-gray-600 mt-2">Higher Crop Yields</p>
             </div>
             <div>
-              <h4 className="text-4xl font-bold text-green-700">
+              <h4 className="text-4xl font-bold text-teal-500">
                 <Counter target={100} duration={2000} />%
               </h4>
               <p className="text-gray-600 mt-2">Satisfaction Rate</p>
@@ -117,7 +117,7 @@ const About = () => {
 
         {/* Call to Action Section */}
         <div className="bg-gray-100 py-12 mt-16 rounded-lg">
-          <h3 className="text-3xl font-bold text-green-600">
+          <h3 className="text-3xl font-bold text-teal-500">
             Join the Smart Farming Revolution
           </h3>
           <p className="text-gray-700 mt-4">
@@ -125,7 +125,7 @@ const About = () => {
             solutions. Save water, improve crop health, and simplify your
             farming process.
           </p>
-          <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition">
+          <button className="mt-6 bg-teal-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition">
             Learn More
           </button>
         </div>

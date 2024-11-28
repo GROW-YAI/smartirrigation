@@ -5,7 +5,7 @@ import Farmer2 from "../assets/user.png.webp";
 
 const Home = () => {
   return (
-    <section className="bg-gray-50 min-h-screen flex flex-col items-center pt-16">
+    <section className="bg-gray-50 min-h-screen flex flex-col items-center pt-14">
       {/* Hero Section */}
       <div className="w-full bg-gradient-to-br from-green-600 to-blue-600 text-white py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -20,10 +20,10 @@ const Home = () => {
               efficient and sustainable.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-white text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition w-full sm:w-auto hidden md:block">
+              <button className="bg-white text-teal-500 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition w-full sm:w-auto hidden md:block">
                 Get Started
               </button>
-              <button className="bg-green-700 px-6 py-3 rounded-md font-semibold hover:bg-green-800 transition w-full sm:w-auto hidden md:block">
+              <button className="bg-teal-500 px-6 py-3 rounded-md font-semibold hover:bg-teal-700 transition w-full sm:w-auto hidden md:block">
                 Learn More
               </button>
             </div>
@@ -68,7 +68,7 @@ const Home = () => {
         <div className="mt-10 grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {/* Feature 1 */}
           <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
-            <div className="w-14 h-14 bg-green-100 text-green-600 flex items-center justify-center rounded-full mb-4">
+            <div className="w-14 h-14 bg-green-100 text-teal-500 flex items-center justify-center rounded-full mb-4">
               <span className="material-icons text-3xl">water_drop</span>
               {/* <span className="material-symbols-rounded">water</span> */}
             </div>
@@ -158,12 +158,12 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="w-full bg-green-700 text-white py-10 text-center">
+      <div className="w-full bg-teal-500 text-white py-10 text-center">
         <h2 className="text-3xl font-bold">Ready to Make Your Farm Smarter?</h2>
         <p className="text-lg mt-4">
           Contact us today to get started with our automated irrigation system.
         </p>
-        <button className="mt-6 bg-white text-green-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
+        <button className="mt-6 bg-white text-teal-500 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
           Contact Us
         </button>
       </div>

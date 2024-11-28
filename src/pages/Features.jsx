@@ -6,7 +6,7 @@ const Features = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-green-600">Our Features</h2>
+          <h2 className="text-4xl font-bold text-teal-500">Our Features</h2>
           <p className="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
             Explore the cutting-edge functionalities that make our irrigation
             system a smart, efficient, and sustainable choice for farmers.
@@ -17,7 +17,7 @@ const Features = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
           {/* Feature 1 */}
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition p-8 text-center">
-            <div className="w-16 h-16 mx-auto flex items-center justify-center bg-green-100 text-green-600 rounded-full">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center bg-green-100 text-teal-500 rounded-full">
               <span className="material-icons text-4xl">auto_mode</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mt-4">

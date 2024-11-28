@@ -40,7 +40,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   required
                 />
               </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   required
                 />
               </div>
@@ -81,7 +81,7 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                  className="bg-teal-500 hover:bg-teal-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
                 >
                   Submit
                 </button>
@@ -105,7 +105,7 @@ const Contact = () => {
               <div className="text-center mt-8">
                 <a
                   href="#"
-                  className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                  className="bg-teal-500 hover:bg-teal-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
                 >
                   Contact Support
                 </a>

@@ -113,7 +113,7 @@ const Pricing = () => {
   return (
     <div className="py-40 bg-gray-50" id="pricing">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-teal-500 mb-12 text-center">
           Affordable & Smart Plans for Irrigation
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -123,24 +123,24 @@ const Pricing = () => {
               className="flex flex-col items-center bg-white p-8 rounded-lg shadow-xl transition-transform transform hover:scale-105"
             >
               {/* Plan Icon */}
-              <div className="text-4xl text-green-500 mb-6">{plan.icon}</div>
+              <div className="text-4xl text-teal-500 mb-6">{plan.icon}</div>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 {plan.title}
               </h3>
-              <p className="text-3xl font-bold text-green-600 mb-4">
+              <p className="text-3xl font-bold text-teal-500 mb-4">
                 {plan.price}
               </p>
               <ul className="text-gray-700 text-center mb-6 space-y-2">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center space-x-2">
-                    <span className="text-green-500">✔️</span>
+                    <span className="text-teal-500">✔️</span>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href={plan.buttonLink}
-                className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                className="bg-teal-500 hover:bg-green-700 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
               >
                 {plan.buttonLabel}
               </a>
