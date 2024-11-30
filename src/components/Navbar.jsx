@@ -773,7 +773,7 @@ const Navbar = () => {
             >
               <li>
                 <a
-                  href="#home"
+                  href="/home"
                   className="block text-xl py-2 px-4 text-white hover:bg-teal-700 rounded"
                   onClick={() => setIsMenuOpen(false)}
                 >
