@@ -1,4 +1,3 @@
-import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   return (
@@ -71,8 +70,7 @@ const Footer = () => {
         <div className="text-center text-gray-500 mt-6">
           <p>© 2024 Smart Irrigation. All Rights Reserved.</p>
           <p className="text-xs mt-2">
-            Designed with <span className="text-red-500">♥</span> by Your
-            Company
+            Designed with <span className="text-red-500">♥</span> FutureDev
           </p>
         </div>
       </div>

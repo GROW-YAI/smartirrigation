@@ -1,4 +1,10 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -88,24 +94,42 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-900">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="space-y-8 p-6 bg-white rounded-lg shadow-md">
+              <h3 className="text-3xl font-semibold text-gray-900 border-b pb-4">
                 Contact Information
               </h3>
-              <p className="text-gray-700">
-                <strong>Email:</strong> support@smartirrigation.com
+              <p className="flex items-center text-gray-700 space-x-4">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="text-teal-500 text-lg"
+                />
+                <span>
+                  <strong>Email:</strong> support@smartirrigation.com
+                </span>
               </p>
-              <p className="text-gray-700">
-                <strong>Phone:</strong> +233 24 399 9631
+              <p className="flex items-center text-gray-700 space-x-4">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="text-teal-500 text-lg"
+                />
+                <span>
+                  <strong>Phone:</strong> +233 24 399 9631
+                </span>
               </p>
-              <p className="text-gray-700 mb-8">
-                <strong>Address:</strong> 18 Mboumou st, Accra, Ghana
+              <p className="flex items-center text-gray-700 space-x-4">
+                <FontAwesomeIcon
+                  icon={faMapMarkerAlt}
+                  className="text-teal-500 text-lg"
+                />
+                <span>
+                  <strong>Address:</strong> 18 Mboumou st, Accra, Ghana
+                </span>
               </p>
               <div className="text-center mt-8">
                 <a
                   href="#"
-                  className="bg-teal-500 hover:bg-teal-500 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                  className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300 inline-block"
                 >
                   Contact Support
                 </a>
