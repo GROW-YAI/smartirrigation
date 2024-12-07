@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const Counter = ({ target, duration }) => {
   const [count, setCount] = useState(0);
 
@@ -96,7 +96,7 @@ const About = () => {
             </div>
             <div>
               <h4 className="text-4xl font-bold text-teal-500">
-                <Counter target={12000} duration={2500} />+
+                <Counter target={1200} duration={2000} />+
               </h4>
               <p className="text-gray-600 mt-2">Farmers Helped</p>
             </div>
@@ -125,7 +125,10 @@ const About = () => {
             solutions. Save water, improve crop health, and simplify your
             farming process.
           </p>
-          <button className="mt-6 bg-teal-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition">
+          <button
+            to="/"
+            className="mt-6 bg-teal-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-teal-700 transition"
+          >
             Learn More
           </button>
         </div>

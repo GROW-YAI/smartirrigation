@@ -140,7 +140,7 @@ const Pricing = () => {
               </ul>
               <a
                 href={plan.buttonLink}
-                className="bg-teal-500 hover:bg-green-700 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
+                className="bg-teal-500 hover:bg-teal-700 text-white px-8 py-4 rounded-lg shadow-md transition-all duration-300"
               >
                 {plan.buttonLabel}
               </a>
