@@ -85,7 +85,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import InformationPage from "./components/InformationPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Features from "./pages/Features";
@@ -124,6 +124,7 @@ const App = () => {
         <Route path="/features" element={<Features />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/information" element={<InformationPage />} />
       </Routes>
       <Footer />
     </Router>

@@ -112,7 +112,7 @@ const plans = [
 const Pricing = () => {
   return (
     <div className="py-40 bg-gray-50" id="pricing">
-      <div className="container px-4 mx-auto">
+      <div className="container max-w-7xl px-6 mx-auto ">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-teal-500 mb-12 text-center">
           Affordable & Smart Plans for Irrigation
         </h2>

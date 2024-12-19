@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-100 py-36" id="contact">
-      <div className="container px-4 mx-auto">
+      <div className="container max-w-7xl px-4 mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-12 text-center">
           Get in Touch
         </h2>
@@ -105,7 +105,7 @@ const Contact = () => {
                   className="text-teal-500 text-lg"
                 />
                 <span>
-                  <strong>Email:</strong> support@smartirrigation.com
+                  <strong>Email:</strong> support@lithiumtech.com
                 </span>
               </p>
               <p className="flex items-center text-gray-700 space-x-4">

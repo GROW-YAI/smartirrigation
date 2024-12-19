@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { UserPlusIcon, UserMinusIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+import logoImage from "../assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,16 +50,26 @@ const Navbar = () => {
     <div>
       {/* Navbar */}
       <nav className="bg-teal-800 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center p-3">
+        <div className="container max-w-7xl mx-auto flex justify-between items-center p-3">
           {/* Logo */}
-          <h1 className="text-2xl font-bold">SmartIrrigation</h1>
-
+          <Link to="/">
+            <a className="text-3xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
+              LithiumTech<span className="text-white">.</span>
+            </a>
+          </Link>
+          {/* <Link to="/">
+            <img
+              src={logoImage}
+              alt="LithiumTech Logo"
+              className="h-12 w-auto object-contain hover:opacity-90 transition-opacity"
+            />
+          </Link> */}
           {/* Flex Container to Center Nav Links */}
           <div className="flex-grow flex justify-center">
             <ul
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } md:flex md:space-x-6 items-center justify-center w-full md:w-auto absolute md:relative top-full left-0 md:top-auto md:left-auto bg-teal-800 md:bg-transparent p-4 md:p-0 flex-col md:flex-row`}
+              } md:flex md:space-x-2 items-center justify-center w-full md:w-auto absolute md:relative top-full left-0 md:top-auto md:left-auto bg-teal-800 md:bg-transparent p-4 md:p-0 flex-col md:flex-row`}
             >
               <li>
                 <a
@@ -106,7 +118,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-
           {/* Right-Aligned Elements: Menu Button and Login/Logout Icon */}
           <div className="ml-auto flex items-center space-x-4">
             {/* Mobile Menu Button */}
@@ -150,7 +161,7 @@ const Navbar = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 w-96">
             <div className="flex justify-center mb-4">
               <div className="bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full">
-                <span className="text-2xl font-bold">SI</span>
+                <span className="text-2xl font-bold">LT</span>
               </div>
             </div>
             <h2 className="text-2xl font-semibold text-center mb-4">
