@@ -146,7 +146,7 @@ const InformationPage = () => {
                 <div className="p-4 border-t bg-gray-50">
                   <a
                     href="#"
-                    className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium"
+                    className="inline-flex items-center text-teal-600 hover:text-teal-400 font-medium"
                   >
                     Learn more about this innovation
                     <svg
