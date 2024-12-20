@@ -35,8 +35,10 @@ const Footer = () => {
               aria-label="Twitter"
               className="text-gray-400 hover:text-blue-400 transition-colors text-xl"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-x-twitter"></i>{" "}
+              {/* Use this if "fa-x-twitter" exists in your font-awesome package */}
             </a>
+
             <a
               href="https://www.instagram.com/lithiumtech_ent/"
               target="_blank"
