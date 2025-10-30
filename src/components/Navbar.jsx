@@ -119,8 +119,8 @@ const Navbar = () => {
             </ul>
           </div>
           {/* Right-Aligned Elements: Menu Button and Login/Logout Icon */}
-          <div className="ml-auto flex items-center space-x-4">
-            {/* Mobile Menu Button */}
+          {/* <div className="ml-auto flex items-center space-x-4">
+            Mobile Menu Button
             <button
               className="md:hidden block text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -130,7 +130,7 @@ const Navbar = () => {
               </span>
             </button>
 
-            {/* Login/Logout Icon */}
+            Login/Logout Icon
             <div className="relative group">
               {isLoggedIn ? (
                 <button
@@ -151,7 +151,7 @@ const Navbar = () => {
                 {isLoggedIn ? "Logout" : "Login"}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
 
@@ -240,7 +240,7 @@ const Navbar = () => {
             </form>
 
             {/* Switch to Sign-Up/Login */}
-            <div className="text-center mt-4">
+            {/* <div className="text-center mt-4">
               {isSignUp ? (
                 <>
                   <p className="text-sm">
@@ -266,7 +266,7 @@ const Navbar = () => {
                   </p>
                 </>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       )}

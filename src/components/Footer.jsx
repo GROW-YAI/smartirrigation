@@ -73,16 +73,19 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-start mt-8">
           <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-gray-400 text-center">
             <li className="hover:text-white transition-colors">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="hover:text-white transition-colors">
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li className="hover:text-white transition-colors">
-              <a href="#">Services</a>
+              <a href="/features">Features</a>
             </li>
             <li className="hover:text-white transition-colors">
-              <a href="#">Contact</a>
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li className="hover:text-white transition-colors">
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>

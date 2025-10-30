@@ -105,9 +105,9 @@ const Home = () => {
             <img
               src={Hero}
               alt="Smart Irrigation System"
-              className="rounded-lg shadow-xl w-full h-auto"
+              className="rounded-full shadow-xl w-full h-auto"
             />
-            <div className="absolute bottom-4 right-4 bg-white p-4 rounded-md shadow-md max-w-xs text-sm">
+            {/* <div className="absolute bottom-4 right-4 bg-white p-4 rounded-md shadow-md max-w-xs text-sm">
               <h3 className="font-semibold text-gray-800">Live Metrics:</h3>
               <p className="text-gray-600">Soil Moisture: 75%</p>
               <div className="flex items-center text-gray-600 mt-2">
@@ -118,7 +118,7 @@ const Home = () => {
                   <strong>Max:</strong> 34°C | <strong>Min:</strong> 20°C
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
