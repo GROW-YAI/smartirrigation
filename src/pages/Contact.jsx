@@ -105,7 +105,7 @@ const Contact = () => {
                   className="text-teal-500 text-lg"
                 />
                 <span>
-                  <strong>Email:</strong> support@lithiumtech.com
+                  <strong>Email:</strong> alexsetsoafia@gmail.com
                 </span>
               </p>
               <p className="flex items-center text-gray-700 space-x-4">
@@ -114,7 +114,7 @@ const Contact = () => {
                   className="text-teal-500 text-lg"
                 />
                 <span>
-                  <strong>Phone:</strong> +233 24 399 9631
+                  <strong>Phone:</strong> +233 24 156 7080
                 </span>
               </p>
               <p className="flex items-center text-gray-700 space-x-4">

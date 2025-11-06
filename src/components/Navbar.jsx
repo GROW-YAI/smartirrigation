@@ -50,20 +50,24 @@ const Navbar = () => {
     <div>
       {/* Navbar */}
       <nav className="bg-teal-800 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
-        <div className="container max-w-7xl mx-auto flex justify-between items-center p-3">
+        <div className="container max-w-7xl mx-auto flex justify-between items-center p-3 relative">
           {/* Logo */}
           <Link to="/">
             <a className="text-3xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
               LithiumTech<span className="text-white">.</span>
             </a>
           </Link>
-          {/* <Link to="/">
-            <img
-              src={logoImage}
-              alt="LithiumTech Logo"
-              className="h-12 w-auto object-contain hover:opacity-90 transition-opacity"
-            />
-          </Link> */}
+
+          {/* Hamburger Menu Button */}
+          <button
+            className="md:hidden text-white text-3xl absolute right-4 top-1/2 transform -translate-y-1/2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span className="material-icons">
+              {isMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
+
           {/* Flex Container to Center Nav Links */}
           <div className="flex-grow flex justify-center">
             <ul
@@ -118,40 +122,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          {/* Right-Aligned Elements: Menu Button and Login/Logout Icon */}
-          {/* <div className="ml-auto flex items-center space-x-4">
-            Mobile Menu Button
-            <button
-              className="md:hidden block text-white"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <span className="material-icons text-3xl">
-                {isMenuOpen ? "close" : "menu"}
-              </span>
-            </button>
 
-            Login/Logout Icon
-            <div className="relative group">
-              {isLoggedIn ? (
-                <button
-                  onClick={handleLogout}
-                  className="text-white hover:text-gray-300"
-                >
-                  <UserMinusIcon className="w-8 h-8" />
-                </button>
-              ) : (
-                <button
-                  onClick={handleLoginToggle}
-                  className="text-white hover:text-gray-300"
-                >
-                  <UserPlusIcon className="w-8 h-8" />
-                </button>
-              )}
-              <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-30px] opacity-0 group-hover:opacity-100 bg-black text-white text-xs rounded px-2 py-1 shadow-md transition-opacity duration-300">
-                {isLoggedIn ? "Logout" : "Login"}
-              </div>
-            </div>
-          </div> */}
+          {/* Right-Aligned Elements: Menu Button and Login/Logout Icon */}
+          {/* (intentionally left untouched) */}
         </div>
       </nav>
 
@@ -238,35 +211,6 @@ const Navbar = () => {
                 {isSignUp ? "Sign Up" : "Continue"}
               </button>
             </form>
-
-            {/* Switch to Sign-Up/Login */}
-            {/* <div className="text-center mt-4">
-              {isSignUp ? (
-                <>
-                  <p className="text-sm">
-                    Already have an account?{" "}
-                    <button
-                      onClick={switchToLogin}
-                      className="text-teal-500 font-semibold"
-                    >
-                      Log in
-                    </button>
-                  </p>
-                </>
-              ) : (
-                <>
-                  <p className="text-sm">
-                    Don't have an account?{" "}
-                    <button
-                      onClick={switchToSignUp}
-                      className="text-teal-500 font-semibold"
-                    >
-                      Sign Up
-                    </button>
-                  </p>
-                </>
-              )}
-            </div> */}
           </div>
         </div>
       )}

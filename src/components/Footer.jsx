@@ -1,8 +1,27 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 relative">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-left border-b border-gray-700 pb-8">
@@ -28,16 +47,6 @@ const Footer = () => {
             >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a
-              href="https://www.x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="text-gray-400 hover:text-blue-400 transition-colors text-xl"
-            >
-              <i className="fab fa-x-twitter"></i>{" "}
-              {/* Use this if "fa-x-twitter" exists in your font-awesome package */}
-            </a>
 
             <a
               href="https://www.instagram.com/lithiumtech_ent/"
@@ -47,24 +56,6 @@ const Footer = () => {
               className="text-gray-400 hover:text-pink-500 transition-colors text-xl"
             >
               <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="text-gray-400 hover:text-blue-700 transition-colors text-xl"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://vm.tiktok.com/ZMkLxrnj5/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok"
-              className="text-gray-400 hover:text-black transition-colors text-xl"
-            >
-              <i className="fab fa-tiktok"></i>
             </a>
           </div>
         </div>
@@ -101,6 +92,16 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Scroll to Top Text Button */}
+      {showButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 text-blue-400 hover:text-blue-600 font-semibold tracking-wide transition-colors duration-300"
+        >
+          Back to Top ↑
+        </button>
+      )}
     </footer>
   );
 };
