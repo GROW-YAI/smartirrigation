@@ -57,6 +57,7 @@ const Footer = () => {
             >
               <i className="fab fa-instagram"></i>
             </a>
+
           </div>
         </div>
 

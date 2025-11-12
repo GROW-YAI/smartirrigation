@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
-
+import smartirrigation from "../assets/smartirrigation.jpg";
+import homeauto from "../assets/homeauto.webp";
+import electriccars from "../assets/electriccars.jpg"; 
+import tracker from "../assets/tracker.avif"
+import humancap from "../assets/humancap.jpg"
 const InformationPage = () => {
   const sections = [
     {
@@ -7,7 +11,7 @@ const InformationPage = () => {
       description:
         "Automate watering with real-time soil moisture sensors and environmental conditions. Integrate seamlessly with a mobile app for monitoring.",
       usps: "Saves water, boosts crop productivity, and reduces costs.",
-      image: "/api/placeholder/400/300",
+      image: smartirrigation,
       date: "Dec 19, 2024",
       tag: "Technology",
       impact: "Supporting over 1,000 farmers across Africa",
@@ -22,7 +26,7 @@ const InformationPage = () => {
       description:
         "Affordable systems to automate home functions, enhancing comfort and reducing energy consumption with remote control.",
       usps: "User-friendly, scalable, and locally designed.",
-      image: "/api/placeholder/400/300",
+      image: homeauto, 
       date: "Dec 18, 2024",
       tag: "Lifestyle",
       impact: "Installed in 500+ homes",
@@ -33,7 +37,7 @@ const InformationPage = () => {
       description:
         "Real-time GPS solutions for tracking and fleet management of vehicles and motorbikes, ensuring security and peace of mind.",
       usps: "Compact, reliable, and long-lasting.",
-      image: "/api/placeholder/400/300",
+      image: tracker,
       date: "Dec 17, 2024",
       tag: "Security",
       impact: "Protecting 2,000+ vehicles",
@@ -44,7 +48,7 @@ const InformationPage = () => {
       description:
         "Sustainable, locally assembled electric vehicles tailored for African needs, offering affordability and eco-friendliness.",
       usps: "Eco-friendly, energy-efficient, and cost-effective.",
-      image: "/api/placeholder/400/300",
+      image: electriccars, 
       date: "Dec 16, 2024",
       tag: "Environment",
       impact: "Reducing carbon emissions by 50%",
@@ -55,7 +59,7 @@ const InformationPage = () => {
       description:
         "Practical, hands-on training in emerging technologies to empower young innovators and professionals.",
       usps: "Led by professionals, focusing on African challenges.",
-      image: "/api/placeholder/400/300",
+      image: humancap,
       date: "Dec 15, 2024",
       tag: "Education",
       impact: "Trained 5,000+ professionals",
