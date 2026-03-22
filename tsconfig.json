@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types"]
+}
