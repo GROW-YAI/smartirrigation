@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import BoafoWidgetInitializer from "./components/BoafoWidgetInitializer";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "My Website",

@@ -5,7 +5,7 @@ import { initializeBoafoWidget } from "boafo-accessibility-widget";
 
 export default function BoafoWidgetInitializer() {
   useEffect(() => {
-    const BOAFO_API_KEY = "boafo_5678";
+    const BOAFO_API_KEY = import.meta.env.BOAFO_API_KEY;
     initializeBoafoWidget(BOAFO_API_KEY);
   }, []);
 
