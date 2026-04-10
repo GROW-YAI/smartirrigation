@@ -1,8 +1,8 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useEffect, useState } from "react";
 
-const Footer = () => {
-  const [showButton, setShowButton] = useState(false);
+const Footer: React.FC = () => {
+const [showButton, setShowButton] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {

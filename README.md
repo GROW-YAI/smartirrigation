@@ -136,56 +136,9 @@ This comprehensive guide covers:
 
 ---
 
-## 📁 Project Structure
 
-```
-smartirrigation/
-├── app/
-│   ├── components/
-│   │   └── BoafoWidgetInitializer.tsx
-│   └── layout.tsx
-├── public/
-│   ├── vite.svg
-│   └── _redirects
-├── src/
-│   ├── assets/
-│   │   ├── farmer.jpg
-│   │   ├── founder-img.png.webp
-│   │   ├── hero-image.png
-│   │   ├── logo.png
-│   │   ├── si.png
-│   │   └── user.png.webp
-│   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── InformationPage.jsx
-│   │   └── Navbar.jsx
-│   ├── layouts/
-│   │   └── RootLayout.jsx
-│   ├── pages/
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Features.jsx
-│   │   ├── Home.jsx
-│   │   └── Pricing.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .env.example
-├── .gitignore
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-├── vite-env.d.ts
-├── tsconfig.json
-├── tsconfig.node.json
-├── eslint.config.js
-└── postcss.config.js
-```
 
----
 
-##  Mission & Impact
 
 ### Our Vision
 To inspire and empower African youth to innovate, ensuring technology is accessible and fosters sustainable, community-driven solutions.
