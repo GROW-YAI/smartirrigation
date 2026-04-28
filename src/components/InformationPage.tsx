@@ -4,7 +4,7 @@ import homeauto from "../assets/homeauto.webp";
 import electriccars from "../assets/electriccars.jpg"; 
 import tracker from "../assets/tracker.avif"
 import humancap from "../assets/humancap.jpg"
-const InformationPage = () => {
+const InformationPage: React.FC = () => {
   const sections = [
     {
       title: "Smart Irrigation System",

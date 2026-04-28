@@ -1,50 +1,36 @@
-import { useState } from "react";
-import { UserPlusIcon, UserMinusIcon } from "@heroicons/react/24/outline";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoImage from "../assets/logo.png";
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isSignUp, setIsSignUp] = useState(false); // Toggle between login/signup
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
+  const [, setIsLoggedIn] = useState<boolean>(false);
+  const [isSignUp] = useState<boolean>(false); // Toggle between login/signup
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
-  const handleLoginToggle = () => {
-    setIsLoginOpen(!isLoginOpen);
-  };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
 
-  const handleLoginSubmit = (e) => {
+  const handleLoginSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     setIsLoggedIn(true);
     setIsLoginOpen(false);
   };
 
-  const handleSignUpSubmit = (e) => {
+  const handleSignUpSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     setIsLoggedIn(true);
     setIsLoginOpen(false);
   };
 
-  const handleGoogleSignIn = (e) => {
+  const handleGoogleSignIn = (e: React.MouseEvent<HTMLButtonElement>): void => {
     e.preventDefault();
     // Placeholder for Google sign-in logic
     setIsLoggedIn(true);
     setIsLoginOpen(false);
   };
 
-  const switchToSignUp = () => {
-    setIsSignUp(true);
-  };
 
-  const switchToLogin = () => {
-    setIsSignUp(false);
-  };
 
   return (
     <div>
@@ -219,3 +205,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

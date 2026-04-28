@@ -1,6 +1,6 @@
 import React from "react";
 
-const Features = () => {
+const Features: React.FC = () => {
   return (
     <section id="features" className="bg-gray-50 py-36">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -105,3 +105,4 @@ const Features = () => {
 };
 
 export default Features;
+

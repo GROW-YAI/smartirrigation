@@ -76,7 +76,7 @@
 
 // export default App;
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -91,6 +91,7 @@ import About from "./pages/About";
 import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import BoafoWidgetInitializer from "./components/BoafoWidgetInitializer";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -104,7 +105,8 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <Router>
+<Router>
+      <BoafoWidgetInitializer />
       <ScrollToTop />
       <Navbar />
       <Routes>

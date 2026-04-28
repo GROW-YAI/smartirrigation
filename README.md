@@ -2,104 +2,94 @@
 
 A modern React-based web application showcasing innovative agricultural and technological solutions designed specifically for African communities. This project presents Lithium Technology Enterprise's smart irrigation systems and other cutting-edge products aimed at promoting technological self-reliance and sustainable development.
 
-## 🌟 Overview
+##  Project Overview
 
-Lithium Technology Enterprise is dedicated to empowering African youth through accessible technology solutions. Our Smart Irrigation App serves as a comprehensive platform that demonstrates our commitment to solving real-life challenges, improving the cost of living, and fostering technological independence across Africa.
+The Smart Irrigation App is a comprehensive web platform developed by Lithium Technology Enterprise to demonstrate and provide access to innovative agricultural technology solutions for African communities. The application serves as both a showcase of our products and a functional tool for farmers to monitor and manage their irrigation systems.
 
-## ✨ Key Features
+### What the Site Does
 
-### 🚀 Core Products & Solutions
+The Smart Irrigation App provides:
 
-- **Smart Irrigation System**: Automated watering using real-time soil moisture sensors and environmental data
-- **Home Automation Solutions**: Affordable systems for enhanced comfort and energy efficiency
-- **Vehicle & Motorbike Tracking**: GPS-based fleet management and security solutions
-- **Electric Vehicles (EVs)**: Sustainable, locally assembled mobility solutions
-- **Training & Capacity Building**: Hands-on programs for emerging technology skills
-- **Real-Time Analytics**: Live data monitoring for soil health and environmental conditions
+- **Smart Irrigation Monitoring**: Real-time soil moisture tracking and automated watering systems
+- **Product Showcase**: Detailed information about our range of technology solutions including home automation, GPS tracking, and electric vehicles
+- **Educational Resources**: Training materials and capacity building programs for emerging technology skills
+- **Farmer Testimonials**: Real success stories from farmers who have benefited from our solutions
+- **Contact & Support**: Easy access to our team for inquiries and partnerships
 
-### 🎯 Application Features
+### Main Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Interactive UI**: Modern, intuitive interface with smooth animations
 - **Real-Time Metrics**: Live display of soil moisture, temperature, and environmental data
 - **User Authentication**: Login and signup functionality with Google integration
-- **Modal Interactions**: Detailed feature explanations through interactive modals
-- **Customer Testimonials**: Real farmer feedback and success stories
-- **Multi-Page Navigation**: Seamless routing between different sections
+- **Multi-Page Navigation**: Seamless routing between Home, Features, About, Pricing, and Contact pages
+- **Accessibility**: Fully accessible to all users through the Boafo accessibility widget
 
-## 🛠️ Technology Stack
+### Technologies Used
 
-### Frontend Framework
 - **React 18.3.1**: Modern React with hooks and functional components
 - **React Router DOM 7.0.1**: Client-side routing and navigation
-
-### Styling & UI
 - **Tailwind CSS 3.4.15**: Utility-first CSS framework for rapid styling
-- **PostCSS 8.4.49**: CSS processing and optimization
-- **Autoprefixer 10.4.20**: Automatic vendor prefixing
-
-### Icons & Assets
-- **Heroicons React 2.2.0**: Beautiful hand-crafted SVG icons
-- **FontAwesome 6.7.1**: Comprehensive icon library
-- **React Icons 5.3.0**: Popular icon packs for React
-- **Material Icons**: Google's Material Design icons
-
-### Development Tools
 - **Vite 6.0.0**: Fast build tool and development server
-- **ESLint 9.15.0**: Code linting and quality assurance
-- **React Plugin**: ESLint plugin for React-specific rules
+- **Boafo Accessibility Widget**: Ensures the site is accessible to all users, including those with disabilities
 
-## 📁 Project Structure
+### Boafo Accessibility Widget
 
-```
-smartIrrigationApp/
-├── public/
-│   ├── vite.svg
-│   └── _redirects
-├── src/
-│   ├── assets/
-│   │   ├── farmer.jpg
-│   │   ├── founder-img.png.webp
-│   │   ├── hero-image.png
-│   │   ├── logo.png
-│   │   ├── si.png
-│   │   └── user.png.webp
-│   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── InformationPage.jsx
-│   │   └── Navbar.jsx
-│   ├── layouts/
-│   │   └── RootLayout.jsx
-│   ├── pages/
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Features.jsx
-│   │   ├── Home.jsx
-│   │   └── Pricing.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-├── eslint.config.js
-└── postcss.config.js
-```
+This project integrates the [Boafo Accessibility Widget](https://boafo.co) to make the website accessible to all users, including those with visual, motor, cognitive, and other disabilities. The widget provides features such as:
 
-## 🚀 Getting Started
+- Screen reader compatibility
+- Keyboard navigation support
+- High contrast modes
+- Font size adjustments
+- Focus indicators
+- And much more
+
+This ensures that our technology solutions are truly accessible to everyone in the community.
+
+---
+
+##  How to Get Your Boafo API Key
+
+To use the Boafo Accessibility Widget in your project, you need to obtain an API key:
+
+1. **Visit [boafo.co](https://boafo.co)**
+2. **Register for an account** or log in if you already have one
+3. **Navigate to your Dashboard**
+4. **Generate a new API key** for your project
+5. **Copy the API key** - it will look something like `boafo_xxxx`
+
+Keep this API key secure and never commit it directly to version control.
+
+---
+
+##  How to Integrate the Boafo Widget
+
+For detailed integration instructions, please refer to the official Boafo integration guide:
+
+**[Boafo Widget Integration Guide](https://drive.google.com/file/d/1tvwK-sBZI2a4uldd6z5LD1iLblSl3WbG/view?usp=sharing)**
+
+This comprehensive guide covers:
+- Installation methods
+- Configuration options
+- Customization settings
+- Troubleshooting common issues
+
+---
+
+## 🚀 Setup Instructions
 
 ### Prerequisites
 
 - **Node.js**: Version 18.0 or higher
 - **npm**: Version 8.0 or higher (comes with Node.js)
+- **Git**: For cloning the repository
 
-### Installation
+### Step-by-Step Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/smartIrrigationApp.git
-   cd smartIrrigationApp
+   git clone https://github.com/GROW-YAI/smartirrigation.git
+   cd smartirrigation
    ```
 
 2. **Install dependencies**
@@ -107,12 +97,26 @@ smartIrrigationApp/
    npm install
    ```
 
-3. **Start the development server**
+3. **Set up environment variables**
+   
+   Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Open the `.env` file and add your Boafo API key:
+   ```
+   BOAFO_API_KEY=your_actual_api_key_here
+   ```
+   
+   Replace `your_actual_api_key_here` with the API key you obtained from [boafo.co](https://boafo.co).
+
+4. **Start the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to `http://localhost:5173` to view the application
 
 ### Available Scripts
@@ -122,21 +126,19 @@ smartIrrigationApp/
 - **Preview**: `npm run preview` - Preview the production build locally
 - **Lint**: `npm run lint` - Run ESLint to check code quality
 
-## 🎨 Design Philosophy
+### Environment Variables
 
-### User Experience
-- **Mobile-First**: Responsive design ensuring optimal experience across all devices
-- **Accessibility**: Semantic HTML and ARIA compliance for inclusive design
-- **Performance**: Optimized loading times and smooth interactions
-- **Intuitive Navigation**: Clear information architecture and user flows
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `BOAFO_API_KEY` | Your Boafo Accessibility Widget API key | Yes |
 
-### Visual Design
-- **Modern Aesthetics**: Clean, professional interface with vibrant color schemes
-- **Consistent Branding**: Cohesive visual identity throughout the application
-- **Interactive Elements**: Hover effects, transitions, and micro-animations
-- **Information Hierarchy**: Clear typography and layout structure
+**Important**: Never commit your `.env` file to version control. It is already included in `.gitignore`.
 
-## 🌍 Mission & Impact
+---
+
+
+
+
 
 ### Our Vision
 To inspire and empower African youth to innovate, ensuring technology is accessible and fosters sustainable, community-driven solutions.
@@ -150,36 +152,9 @@ To design, develop, and assemble innovative products that solve real-life challe
 - **50%** Higher crop yields achieved
 - **100%** Customer satisfaction rate
 
-## 🔧 Configuration
+---
 
-### Tailwind CSS
-The project uses a custom Tailwind configuration optimized for the design system:
-
-```javascript
-// tailwind.config.js
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-### Vite Configuration
-Optimized build configuration for React development:
-
-```javascript
-// vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
-})
-```
-
-## 🚀 Deployment
+##  Deployment
 
 ### Build for Production
 
@@ -200,11 +175,11 @@ export default defineConfig({
 - **GitHub Pages**: Free hosting for open-source projects
 - **AWS S3**: Scalable cloud hosting solution
 
-## 🤝 Contributing
+---
+
+##  Contributing
 
 We welcome contributions from the community! Here's how you can help:
-
-### Development Setup
 
 1. **Fork the repository**
 2. **Create a feature branch**
@@ -226,20 +201,15 @@ We welcome contributions from the community! Here's how you can help:
    ```
 7. **Open a Pull Request**
 
-### Coding Standards
+---
 
-- Use functional components with React hooks
-- Follow ESLint configuration rules
-- Write semantic, accessible HTML
-- Use Tailwind CSS for styling
-- Maintain consistent file naming conventions
-- Add proper PropTypes validation
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact & Support
+---
+
+##  Contact & Support
 
 ### Lithium Technology Enterprise
 - **Website**: [Coming Soon]
@@ -253,11 +223,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - African farmers who inspire our innovation
 - Youth entrepreneurs driving technological change
 - Open-source community for excellent tools and libraries
+- [Boafo](https://boafo.co) for providing accessibility solutions
 - Everyone supporting sustainable development in Africa
 
 ---
